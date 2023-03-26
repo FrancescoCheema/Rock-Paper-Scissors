@@ -60,10 +60,13 @@ function game() {
         console.log(playRound(playerSelection, computerSelection));
         console.log(`Your score is ${playerScore}\nComputer's Score is ${computerScore}`);
     }
+    // in case player wins
     if (playerScore > computerScore) {
         return 'You win!';
+    // in case player loses
     } else if(playerScore < computerScore) {
         return 'You lose!';
+    // in case of tie
         } else if (playerScore == computerScore) {
             return "it's a tie! Trya again.";
     }
