@@ -20,30 +20,30 @@ function playRound(playerSelection, computerSelection) {
     } else if (playerSelection === "rock") {
         if (computerSelection === "scissors") {
         playerScore++;
-        return `You chose ${playerSelection} and the computer chose ${computerSelection}. You won.`;
+        return `You chose ${playerSelection} and the computer chose ${computerSelection}.`;
         } else {
             computerScore++;
-            return `You chose ${playerSelection} and the computer chose ${computerSelection}. You lost.`;
+            return `You chose ${playerSelection} and the computer chose ${computerSelection}.`;
         }
     }
     // Paper beats Rock
     else if (playerSelection === "paper") { 
         if (computerSelection === "rock") {
         playerScore++;
-        return `You chose ${playerSelection} and the computer chose ${computerSelection}. You won.`;
+        return `You chose ${playerSelection} and the computer chose ${computerSelection}.`;
         } else {
             computerScore++;
-            return `You chose ${playerSelection} and the computer chose ${computerSelection}. You lost.`;
+            return `You chose ${playerSelection} and the computer chose ${computerSelection}.`;
         }
     }
     // Scissors cut Paper
     else if (playerSelection === "scissors") { 
         if (computerSelection === "paper") {
         playerScore++;
-        return `You chose ${playerSelection} and the computer chose ${computerSelection}. You won.`;
+        return `You chose ${playerSelection} and the computer chose ${computerSelection}.`;
         } else {
             computerScore++;
-            return `You chose ${playerSelection} and the computer chose ${computerSelection}. You lost.`;
+            return `You chose ${playerSelection} and the computer chose ${computerSelection}.`;
         }
     }
 
@@ -54,14 +54,18 @@ function playRound(playerSelection, computerSelection) {
 function game() {
     for (var i  = 0; i < 5; i++) {
         playRound();
+        let playerSelection = prompt("Choose your weapon: ")
+        let computerSelection = getComputerChoice();
+        console.log(playRound(playerSelection, computerSelection))
+        console.log(`Your score is ${playerScore}\nComputer's Score is ${computerScore}`)
+    }
+    if (playerScore > computerScore) {
+        return 'You win!'
+    } else if(playerScore < computerScore) {
+        return 'You lose!'
     }
 }
 
-let playerSelection = prompt("Choose your weapon: ")
-let computerSelection = getComputerChoice();
-//console.log(`You selected: "${playerSelection}"`);
-//console.log(`Computer selected: "${computerSelection}"`);
-console.log(playRound(playerSelection, computerSelection));
-console.log(playerScore, computerScore);
+console.log(game());
 
 
