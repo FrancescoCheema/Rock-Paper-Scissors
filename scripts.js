@@ -54,17 +54,17 @@ function playRound(playerSelection, computerSelection) {
 function game() {
     for (var i  = 0; i < 5; i++) {
         playRound();
-        let playerSelection = prompt("Choose your weapon: ")
+        let playerSelection = prompt("Choose your weapon: ");
         let computerSelection = getComputerChoice();
-        console.log(playRound(playerSelection, computerSelection))
-        console.log(`Your score is ${playerScore}\nComputer's Score is ${computerScore}`)
+        console.log(playRound(playerSelection, computerSelection));
+        console.log(`Your score is ${playerScore}\nComputer's Score is ${computerScore}`);
     }
     if (playerScore > computerScore) {
         return 'You win!'
     } else if(playerScore < computerScore) {
         return 'You lose!'
     }
-}
+};
 
 console.log(game());
 
