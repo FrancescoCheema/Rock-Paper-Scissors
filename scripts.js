@@ -52,7 +52,7 @@ function playRound(playerSelection, computerSelection) {
 // Create a 5 round game that keeps score and reports a winner or loser at the end
 
 function game() {
-    for (var i  = 0; i < 5; i++) {
+    for (let i  = 0; i < 5; i++) {
         playRound();
         let playerSelection = prompt("Choose your weapon: ");
         playerSelection = playerSelection.toLowerCase();
