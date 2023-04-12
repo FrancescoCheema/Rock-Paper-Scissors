@@ -54,8 +54,8 @@ function playRound(playerSelection, computerSelection) {
 function game() {
     for (let i  = 0; i < 5; i++) {
         playRound();
-        let playerSelection = prompt("Choose your weapon: ");
-        playerSelection = playerSelection.toLowerCase();
+        //let playerSelection = prompt("Choose your weapon: ");
+        //playerSelection = playerSelection.toLowerCase();
         let computerSelection = getComputerChoice();
         console.log(playRound(playerSelection, computerSelection));
         console.log(`Your score is ${playerScore}\nComputer's Score is ${computerScore}`);
@@ -68,7 +68,7 @@ function game() {
         return 'You lose!';
     // in case of tie
         } else if (playerScore == computerScore) {
-            return "it's a tie! Trya again.";
+            return "it's a tie! Try again.";
     }
 };
 
