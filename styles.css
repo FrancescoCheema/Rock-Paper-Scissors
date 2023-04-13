@@ -1,6 +1,6 @@
 body {
     text-align: center;
-    background: rgba(242, 107, 3, 0.753);
+    background: rgba(242, 107, 3, 0.924);
     color: rgba(255, 255, 255, 0.937);
     font-family:Georgia, 'Times New Roman', Times, serif
 }
@@ -39,4 +39,31 @@ h3 {
     justify-content: center;
     font-weight: bold;
     font-size: 20px;
+}
+
+/* weapons styling */
+
+.weapons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    border-radius: 15px;
+    background-color: rgba(242, 107, 3, 0.753);
+    border: solid black;
+    object-fit: fill;
+    animation-name: stretch;
+    animation-duration: 4.0s;
+    animation-timing-function: ease-in-out;
+    animation-direction: reverse;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+img {
+    height: auto;
+    width: 100%;
+    background-color: rgba(242, 107, 3, 0.753);
 }

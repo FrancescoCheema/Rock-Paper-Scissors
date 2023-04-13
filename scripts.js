@@ -3,6 +3,13 @@ let choices = ['rock', 'paper', 'scissors']
 let playerScore = 0;
 let computerScore = 0;
 
+const rock = document.querySelector("#rock")
+const paper = document.querySelector("#paper")
+const scissors = document.querySelector("#scissors")
+
+rock.addEventListener("click", function playRound() {
+})
+
 // Create function for computer to play
 function getComputerChoice() {
     let choice = choices[Math.floor(Math.random() * choices.length)];
