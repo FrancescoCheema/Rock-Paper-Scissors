@@ -3,12 +3,20 @@ let choices = ['rock', 'paper', 'scissors']
 let playerScore = 0;
 let computerScore = 0;
 
+const weaponsBtn = document.querySelectorAll('div.weapons button')
 const rock = document.querySelector("#rock")
 const paper = document.querySelector("#paper")
 const scissors = document.querySelector("#scissors")
 
-rock.addEventListener("click", function playRound() {
-})
+weaponsBtn.forEach(button => { button.addEventListener("click", getPlayerChoice) });
+
+// Create function for player's choice
+
+function getPlayerChoice() {
+    let playerSelection = (e.target.id);
+    getPlayerChoice = e.target.textContent;
+    playRound(playerSelection, getComputerChoice())
+}
 
 // Create function for computer to play
 function getComputerChoice() {
