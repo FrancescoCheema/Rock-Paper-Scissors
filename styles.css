@@ -46,10 +46,21 @@ h3 {
 .weapons {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 25px;
 }
 
-button {
+#rock,
+#paper,
+#scissors {
+    border-radius: 15px;
+    background-color: rgba(242, 107, 3, 0.753);
+    border: solid black;
+    object-fit: fill;
+}
+
+#rock:hover,
+#paper:hover,
+#scissors:hover {
     border-radius: 15px;
     background-color: rgba(242, 107, 3, 0.753);
     border: solid black;
@@ -60,10 +71,33 @@ button {
     animation-direction: reverse;
     animation-iteration-count: infinite;
     animation-play-state: running;
+    transition-duration: 0.4s;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);;
+    transform: scale(1.10);
 }
 
-img {
+img:hover {
     height: auto;
     width: 100%;
     background-color: rgba(242, 107, 3, 0.753);
+}
+
+/* play again button */
+
+#playagain-btn {
+    border-radius: 10px;
+    height: auto;
+    background-color:rgba(242, 107, 3, 0.753)
+}
+
+#playagain-btn:hover {
+    animation-name: stretch;
+    animation-duration: 4.0s;
+    animation-timing-function: ease-in-out;
+    animation-direction: reverse;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    transition-duration: 0.4s;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);;
+    transform: scale(1.10);
 }
