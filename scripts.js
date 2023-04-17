@@ -3,14 +3,14 @@ let choices = ['Rock','Paper', 'Scissors'];
 let playerScore = 0;
 let computerScore = 0;
 
-const rockBtn = document.querySelector('.rock-btn');
-const paperBtn = document.querySelector('.paper-btn');
-const scissorsBtn = document.querySelector('.scissors-btn');
-const playerChoice = document.querySelector('#player-choice');
-const computerSelection = document.querySelector('#computer-choice');
-const playerScoreBoard = document.querySelector("#player-score");
-const compScoreBoard = document.querySelector("#comp-score");
-const textDesc = document.querySelector('.text-desc');
+let rockBtn = document.querySelector('.rock-btn');
+let paperBtn = document.querySelector('.paper-btn');
+let scissorsBtn = document.querySelector('.scissors-btn');
+let playerChoice = document.querySelector('#player-choice');
+let computerSelection = document.querySelector('#computer-choice');
+let playerScoreBoard = document.querySelector("#player-score");
+let compScoreBoard = document.querySelector("#comp-score");
+let textDesc = document.querySelector('.text-desc');
 const playAgainBtn = document.querySelector('#playagain-btn')
 
 rockBtn.addEventListener("click", (e) => {
@@ -29,11 +29,7 @@ scissorsBtn.addEventListener("click", (e) => {
     playRound(playerSelection);
 });
 
-playAgainBtn.addEventListener("click", function () {
-    playerScore = 0;
-    computerScore = 0;
-    playRound()
-})
+playAgainBtn.addEventListener("click", playAgain)
 
 // Create function for computer to play
 
@@ -109,3 +105,18 @@ function checkWinner() {
         scissorsBtn.setAttribute("disabled", 1);
     }
 };
+
+function playAgain() {
+    playerScore = 0;
+    computerScore = 0;
+    choice = "";
+    playerSelection = "";
+    playerChoice.innerHTML = "?";
+    computerSelection.innerHTML = "?";
+    playerScoreBoard.innerHTML = 0;
+    compScoreBoard.innerHTML = 0;
+    textDesc.innerHTML = "";
+    rockBtn.removeAttribute("disabled", 1);
+    paperBtn.removeAttribute("disabled", 1);
+    scissorsBtn.removeAttribute("disabled", 1);
+}

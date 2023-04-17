@@ -107,22 +107,38 @@ p {
     font-size: 40px;
 }
 
-/* scores styling */
+/* scores & choices styling */
 
 .board {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    gap: 90px
+    gap: 160px;
+}
+
+#player-choice {
+    margin-left: -420px;
+    margin-right: 120px;
+    margin-top: -80px;
+}
+
+#computer-choice {
+    margin-right: -550px;
+    margin-top: 10px;
 }
 
 #player-score {
-    margin-right: -80px;
+    margin-right: -150px;
+    margin-top: -89px;
 }
 
+#separator {
+    margin-right: -150px;
+    margin-top: -90px;
+}
 
-#computer-choice {
-    margin-right: -10px;
+#comp-score {
+    margin-top: -90px;
 }
 
 /* play again button */
