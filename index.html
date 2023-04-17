@@ -10,7 +10,7 @@
 <body>
     <div class="intro">
         <h1>Rock Paper Scissors</h1>
-        <h2>5 round game!</h2>
+        <h2>Up to 5 rounds!</h2>
         <h3>Choose your Weapon</h3>
     </div>
     <div class="weapons">
@@ -18,14 +18,18 @@
         <button class="paper-btn"><img src="images/paper.png" alt="paper"></button>
         <button class="scissors-btn"><img src="images/scissors.png" alt="scissors"></button>
     </div>
-    <div class="labels">
-        <p>Player</p>
-        <p>Score</p>
-        <p>Computer</p>
+    <div class="player-label">
+        <p id="player">Player</p>
     </div>
-    <div class="scores">
+    <div class="score-label">
+        <p id="score">Score</p>
+    </div>
+    <div class="comp-label">
+        <p id="computer">Computer</p>
+    </div>
+    <div class="board">
         <p id="player-choice">?</p>
-        <p id="total-score">0:0</p>
+        <p id="player-score">0</p><p id="separator">:</p><p id="comp-score">0</p>
         <p id="computer-choice">?</p>
     </div>
     <div class="text">

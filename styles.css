@@ -2,7 +2,8 @@ body {
     text-align: center;
     background: rgb(5, 123, 234);
     color: rgba(255, 255, 255, 0.937);
-    font-family:Georgia, 'Times New Roman', Times, serif
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-top: -25px;
 }
 
 /* fit to page */
@@ -73,26 +74,55 @@ img:hover {
 
 /* labels */
 
-.labels {
+.player-label {
     display: flex;
     flex-direction: row;
-    gap: 180px;
     justify-content: center;
     font-weight: bold;
-    font-size: 20px;
+    margin-right: -80px;
+    margin-top: -20px;
+}
+
+.score-label {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    margin-top: -125px;
+}
+
+.comp-label {
+    display: flex;
+    justify-content: center;
+    justify-content: end;
+    font-weight: bold;
+    margin-top: -125px;
+    margin-right: 327px;
+}
+
+#player {
+    margin-left: -630px;
 }
 
 p {
-    font-size: 30px;
+    font-size: 40px;
 }
 
 /* scores styling */
 
-.scores {
+.board {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    gap: 200px;
+    gap: 90px
+}
+
+#player-score {
+    margin-right: -80px;
+}
+
+
+#computer-choice {
+    margin-right: -10px;
 }
 
 /* play again button */
@@ -101,7 +131,7 @@ p {
     border-radius: 30px;
     border-style:solid;
     height: 60px;
-    width: 700px;
+    width: 900px;
     font-size: 25px;
     background-color:rgba(242, 63, 3, 0.753);
     border: 20px;
