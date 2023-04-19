@@ -5,4 +5,4 @@ CSS Animation,
 Dom Manipulation,
 Event Listeners,
 Query Selectors,
-Creating a user-friendly ui,
+Creating a user-friendly ui.
